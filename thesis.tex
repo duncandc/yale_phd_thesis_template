@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% thesis.tex
+% Alexander Cerjan
+% 2014/04/07
+%
+% modified by Duncan Campbell
+% June 2017
+%
+% A bare, sample template for a Yale PhD thesis using yalephd.cls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,11pt]{yalephd}
+% font size must be between 10pt-12pt.
+
+\usepackage{geometry} % you need this for yalephd.cls to work.
+\usepackage{graphicx} % you probably want the rest of these.
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{comment}
+\usepackage{cite}
+\usepackage{notoccite}
+
+\includeonly{intro,chapter1,chapter2,conclusion,appendices}
+
+\begin{document}
+
+% pretty important things go here
+\title{Title goes here}
+\author{Your name}
+\advisor{Your advisor's name}
+\date{Month, year you'll receive your degree, like ``May, 2017''}
+
+% the stuff that becomes before the meat
+\frontmatter
+
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{abstract}
+
+
+\maketitle
+\makecopyright{2017}
+\tableofcontents
+\listoffigures 
+\listoftables % remove if there are no tables
+
+\chapter{Acknowledgements}
+Bernard of Chartres used to compare us to dwarfs perched on the shoulders of giants. He pointed out that we see more and farther than our predecessors, not because we have keener vision or greater height, but because we are lifted up and borne aloft on their gigantic stature.
+
+% Starts proper arabic numbering of pages and chapters.
+\mainmatter
+
+\include{intro}
+\include{chapter1}
+\include{chapter2}
+\include{conclusion}
+
+\newpage 
+\appendix
+\include{appendices}
+
+\end{document}

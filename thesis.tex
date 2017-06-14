@@ -12,14 +12,27 @@
 \documentclass[letterpaper,11pt]{yalephd}
 % font size must be between 10pt-12pt.
 
-\usepackage{geometry} % you need this for yalephd.cls to work.
-\usepackage{graphicx} % you probably want the rest of these.
+% need this for yalephd.cls to work.
+\usepackage{geometry} 
+
+% use some standard packages
+\usepackage{graphicx} 
 \usepackage{dcolumn}
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{natbib}
+\usepackage{enumerate}
+
+% for hyperlinks
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue]{hyperref}
+\newcommand*{\http}[1]{\href{http://#1}{#1}}
+\newcommand*{\https}[1]{\href{https://#1}{#1}}
+
+% for citation style
+\bibliographystyle{apj}
+\citestyle{aa}
 
 %add any new filenames for additional chapters here
 \includeonly{intro,chapter1,chapter2,conclusion,appendices}
